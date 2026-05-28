@@ -3,136 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Saree Shop - Beautiful Traditional Sarees</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        header {
-            background: #8B0000;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background: #333;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1610030469983-98e550d1193c?w=800') no-repeat center center;
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px black;
-        }
-        .hero h1 {
-            font-size: 3rem;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .product-card {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            text-align: center;
-            border-radius: 8px;
-        }
-        .product-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .btn {
-            background: #8B0000;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>KK Saree | Elegant Designer Sarees</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>My Saree Shop</h1>
-        <p>Traditional Silk & Handloom Sarees</p>
-    </header>
-    
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#collection">Collection</a>
-        <a href="#contact">Contact</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">KK <span>Saree</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
-    
-    <section class="hero" id="home">
-        <div>
-            <h1> Elegant Sarees for Every Occasion</h1>
-            <p>Discover our beautiful collection</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Drape Yourself in <span class="gold-text">Elegance</span></h1>
+            <p>Exclusive Designer Sarees for the Modern Indian Woman.</p>
+            <a href="https://wa.me/918955565554?text=Hi%20KK%20Saree,%20I%20am%20interested%20in%20your%20collection." target="_blank" class="btn-hero">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
         </div>
     </section>
-    
-    <section class="container" id="collection">
-        <h2>Our Collection</h2>
-        <div class="products">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1610030469983-98e550d1193c?w=300" alt="Silk Saree">
-                <h3>Silk Saree</h3>
-                <p>₹2,500</p>
-                <button class="btn">Buy Now</button>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>Across India</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-gem"></i>
+            <h3>Pure Silk</h3>
+            <p>100% Authentic</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-heart"></i>
+            <h3>Handwoven</h3>
+            <p>Craftsmanship</p>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <h2>Our <span class="gold-text">Collection</span></h2>
+        <div class="grid-container">
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1610030469983-98c550e2d7d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+                <h3>Banarasi Silk</h3>
+                <p>Price starts at ₹2,500</p>
+                <a href="https://wa.me/918955565554?text=Interested%20in%20Banarasi%20Silk" class="btn-card">Inquire</a>
             </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1583391728516-7116e08e0c4a?w=300" alt="Cotton Saree">
-                <h3>Cotton Saree</h3>
-                <p>₹1,200</p>
-                <button class="btn">Buy Now</button>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1545231493-84c6eef78979?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+                <h3>Designer Party Wear</h3>
+                <p>Price starts at ₹1,800</p>
+                <a href="https://wa.me/918955565554?text=Interested%20in%20Designer%20Party%20Wear" class="btn-card">Inquire</a>
             </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1594040226829-7f251ab46abb?w=300" alt="Designer Saree">
-                <h3>Designer Saree</h3>
-                <p>₹3,500</p>
-                <button class="btn">Buy Now</button>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1512413344656-1c2c0b3580cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');"></div>
+                <h3>Cotton Daily Wear</h3>
+                <p>Price starts at ₹850</p>
+                <a href="https://wa.me/918955565554?text=Interested%20in%20Cotton%20Saree" class="btn-card">Inquire</a>
             </div>
         </div>
     </section>
-    
-    <section class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@mysareeshop.com</p>
-        <p>Phone: +91 98765 43210</p>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h2>About KK <span>Saree</span></h2>
+            <p>Welcome to KK Saree. We are dedicated to bringing you the finest ethnic wear. With a legacy of trust, <strong>Ajay Agarwal</strong> ensures that every piece is a masterpiece of tradition and modern design.</p>
+        </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2024 My Saree Shop. All Rights Reserved.</p>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>KK Saree</h3>
+            <p>The Name of Elegance</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> +91 8955565554</li>
+                <li><i class="fas fa-map-marker-alt"></i> India</li>
+            </ul>
+            <p class="copyright">&copy; 2023 KK Saree. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
